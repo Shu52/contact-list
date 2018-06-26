@@ -26,7 +26,15 @@ const contactCollection = Object.create({}, { //object that holds create,gets, a
         method: "DELETE"
       })
     }
+  },
+  "editContacts":{
+    value: function(id){
+      return $.ajax({
+        url: `http://localhost:3000/contacts/${id}`,
+        method: "PUT"
+    })
   }
+}
 })
 
 module.exports = contactCollection

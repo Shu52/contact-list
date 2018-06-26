@@ -63,6 +63,7 @@ const contactForm = Object.create({}, {
       addButton.addEventListener("click", addNewContact)// event listener for button
       formArticle.appendChild(addButton)
 
+
       document.querySelector("#display-container").appendChild(formArticle) //appends form to div in index.html
     }
   }

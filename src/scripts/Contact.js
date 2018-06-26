@@ -23,6 +23,12 @@ const contact = Object.create({}, {
           deleteButton.textContent = "Delete"
           deleteButton.addEventListener("click", deleteContact)
           contactSection.appendChild(deleteButton)
+          //edit button
+          const editModal = require("./editModal");
+        const editButton = document.createElement("button")
+        editButton.textContent = "Edit"
+        editButton.addEventListener("click", editModal)
+        contactSection.appendChild(editButton)
         } else {
           const paraElement = document.createElement("p")
           paraElement.textContent = `${key}: ${contact[key]}` //key and key value
